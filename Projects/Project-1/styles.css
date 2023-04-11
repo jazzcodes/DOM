@@ -72,3 +72,12 @@ button{
     font-family: 'Schibsted Grotesk', sans-serif;
 
 }
+
+@media screen and (max-width:400px)
+{
+    .container{
+        transform: scale(0.8);
+    }
+
+
+}
