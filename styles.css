@@ -32,6 +32,7 @@ html{
 
 h2{
     color:darkgreen;
+    font-size: 3rem;
 }
 
 a{
@@ -40,6 +41,13 @@ a{
    
 }
 
+ol{
+    padding:2rem;
+}
+
 li{
     margin-top:2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color:green;
 }
