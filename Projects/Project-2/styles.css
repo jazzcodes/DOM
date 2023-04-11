@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+html{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#open-btn{
+    padding:2rem;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    background-color: lightskyblue;
+    outline: 0;
+    color: rgb(8, 8, 115);
+    border:2px solid rgb(8, 8, 115) ;
+    transition: opacity 0.5s;
+
+
+}
+
+#open-btn:hover{
+    opacity: 0.7;
+}
+
+.modal-container
+{
+    background-color: aliceblue;
+    max-width:320px;
+    padding: 2rem;
+    color:darkcyan;
+    display: none;
+    position: relative;
+    top:-8rem;
+    animation-name:animateModal;
+    animation-duration: 5s;
+    
+
+}
+
+#close-btn
+{
+    color:darkred;
+    font-size: 2rem;
+    height:40px;
+    width: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 0;
+    margin-top: 2rem;
+}
+
+/* Animations */
+
+@keyframes animateModal
+{
+    from{
+        top:-10rem;
+        opacity:0;
+
+    }
+
+    to{
+        top:0.5%;
+        opacity: 1;
+    }
+}

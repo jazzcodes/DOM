@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+     .container {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background-color: pink;
+              border:2px solid purple;
+              padding:2rem;
+              gap:4rem;
+     }
+
+     .boxes {
+            background-color: purple;
+            border:2px solid yellowgreen;
+            color:white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:2rem;
+     }
+
+     button{
+        color:purple;
+        background-color: white;
+        border: 2px solid yellow;
+        cursor: pointer;
+     }
+
+
+     .hidden-content{
+        display: none;
+     }
+
+     .reveal-btn{
+        display: block;
+     }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Event Listeners</h1>
+        <div class="boxes">
+            <h3>Example 1</h3>
+            <button onclick="alert('I love JS')" class="btn-1">Enter</button>
+        </div>
+        <div class="boxes">
+            <h3>Example 2</h3>
+            <button class="btn-2">Enter</button>
+        </div>
+        <div class="boxes box-3">
+            <h3>Example 3</h3>
+            <button class="btn-3">Enter</button>
+        </div>
+    </div>
+    <div class="container" >
+        <div class="hidden-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam illum excepturi tenetur, laboriosam optio assumenda reprehenderit dicta, beatae reiciendis magni consequuntur quisquam totam odit tempora, molestiae expedita cumque. Numquam, vel tempore. Numquam ducimus, minima doloribus provident nulla, voluptas perspiciatis odit consectetur iste architecto, corrupti temporibus recusandae. Explicabo commodi ullam soluta!</div>
+        <button class="reveal-btn">Expand</button>
+    </div>
+    <script src="app2.js"></script>
+</body>
+</html>

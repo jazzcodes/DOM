@@ -1,0 +1,45 @@
+*
+{
+    font-family: 'Schibsted Grotesk', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgreen;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    min-height: 400px;
+    min-width:400px;
+    background-color: lightgreen;
+    border-radius: 2rem;
+    padding:2rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+h2{
+    color:darkgreen;
+}
+
+a{
+    text-decoration: none;
+    color:green;
+   
+}
+
+li{
+    margin-top:2rem;
+}
