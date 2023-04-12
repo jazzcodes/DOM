@@ -1,10 +1,10 @@
-const accordian=document.getElementsByClassName('question');
+const accordion=document.getElementsByClassName('question');
 
 // function toggleAccordian()
 // {
 
 
-for(let i=0;i<accordian.length;i++)
+for(let i=0;i<accordion.length;i++)
 {
     // accordian[i].addEventListener("click",
     // ()=>
@@ -18,7 +18,7 @@ for(let i=0;i<accordian.length;i++)
     //     //   answer.style.display = "block";
     //     // }
     //   });
-    accordian[i].addEventListener("click", function()
+    accordion[i].addEventListener("click", function()
     {
         this.classList.toggle('active');
         let answer = document.getElementsByClassName('answer');
@@ -51,7 +51,7 @@ for(let i=0;i<accordian.length;i++)
     });
  
 
-    console.log(accordian[i]);
+    console.log(accordion[i]);
 
 
 };
