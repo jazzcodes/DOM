@@ -23,23 +23,30 @@ for(let i=0;i<accordian.length;i++)
         this.classList.toggle('active');
         let answer = document.getElementsByClassName('answer');
         console.log(answer);
-        for(let i=0;i<answer.length;i++)
+        // for(let i=0;i<answer.length;i++)
+        // {
+        //     // if (answer[i].style.maxHeight === '0') {
+        //     //     answer[i].style.maxHeight = '100px';
+        //     //     answer[i].style.overflow = 'visible';
+        //     //   } else {
+        //     //     answer[i].style.maxHeight = '0';
+        //     //     answer[i].style.overflow = 'hidden';
+        //     //   }
+        //     // doubt: why did the above method not work?
+        //     if(answer[i].style.display==='block')
+        //     {
+        //         answer[i].style.display='none';
+        //     }
+        //     else{
+        //         answer[i].style.display='block';
+        //     }
+        // }
+        if(answer[i].style.display==='block')
         {
-            // if (answer[i].style.maxHeight === '0') {
-            //     answer[i].style.maxHeight = '100px';
-            //     answer[i].style.overflow = 'visible';
-            //   } else {
-            //     answer[i].style.maxHeight = '0';
-            //     answer[i].style.overflow = 'hidden';
-            //   }
-            // doubt: why did the above method not work?
-            if(answer[i].style.display==='block')
-            {
-                answer[i].style.display='none';
-            }
-            else{
-                answer[i].style.display='block';
-            }
+            answer[i].style.display='none';
+        }
+        else{
+            answer[i].style.display='block';
         }
     });
  
