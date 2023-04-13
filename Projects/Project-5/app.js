@@ -46,3 +46,11 @@ addTaskBtn.addEventListener("click", function()
     });
 });
 
+inputTask.addEventListener("keypress", function(event)
+{
+   if(event.key==="Enter")
+   {
+    event.preventDefault();
+    addTaskBtn.click();
+   }
+});
